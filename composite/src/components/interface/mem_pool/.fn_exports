@@ -1,0 +1,5 @@
+mempool_clear_glb_blked_inv
+mempool_get_mem_inv
+mempool_put_mem_inv
+mempool_set_mgr_desired_inv
+mempool_tmem_mgr_event_waiting_inv

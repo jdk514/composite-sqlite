@@ -1,0 +1,5 @@
+mman_revoke_page
+__mman_alias_page
+mman_get_page
+mman_revoke_page
+print_char

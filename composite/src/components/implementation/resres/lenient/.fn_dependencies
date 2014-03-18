@@ -1,0 +1,11 @@
+lock_component_alloc
+lock_component_pretake
+lock_component_release
+lock_component_take
+mman_get_page
+mman_release_page
+print_char
+sched_block
+sched_thread_params
+stkmgr_grant_stack
+stkmgr_return_stack

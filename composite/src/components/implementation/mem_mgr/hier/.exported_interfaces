@@ -1,0 +1,4 @@
+mman_get_page
+mman_print_stats
+__mman_alias_page
+mman_release_page

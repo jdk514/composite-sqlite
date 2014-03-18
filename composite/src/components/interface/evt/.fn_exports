@@ -1,0 +1,11 @@
+evt_create_inv
+evt_free_inv
+evt_grp_mult_wait_inv
+evt_grp_wait_inv
+evt_set_prio_inv
+evt_split_inv
+evt_stats_inv
+evt_stats_len_inv
+evt_trigger_inv
+evt_wait_inv
+evt_wait_n_inv

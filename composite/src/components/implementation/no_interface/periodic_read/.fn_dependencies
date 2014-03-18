@@ -1,0 +1,14 @@
+evt_create
+evt_free
+mman_get_page
+mman_release_page
+net_close
+net_connect
+net_create_tcp_connection
+periodic_wake_create
+periodic_wake_wait
+print_char
+stkmgr_grant_stack
+stkmgr_return_stack
+valloc_alloc
+valloc_free

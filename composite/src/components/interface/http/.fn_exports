@@ -1,0 +1,5 @@
+content_create_inv
+content_read_inv
+content_remove_inv
+content_split_inv
+content_write_inv

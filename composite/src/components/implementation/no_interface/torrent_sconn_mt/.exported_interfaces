@@ -1,0 +1,5 @@
+periodic_wake_get_lateness
+periodic_wake_get_deadlines
+periodic_wake_get_period
+periodic_wake_get_misses
+periodic_wake_get_miss_lateness

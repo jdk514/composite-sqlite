@@ -1,0 +1,7 @@
+lock_component_alloc_inv
+lock_component_free_inv
+lock_component_pretake_inv
+lock_component_release_inv
+lock_component_take_inv
+lock_stats_inv
+lock_stats_len_inv

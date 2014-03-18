@@ -1,0 +1,5 @@
+sched_child_cntl_thd
+sched_child_thd_crt
+sched_exit
+sched_isroot
+print_char

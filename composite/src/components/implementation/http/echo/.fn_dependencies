@@ -1,0 +1,8 @@
+evt_trigger
+mman_get_page
+mman_release_page
+print_char
+stkmgr_grant_stack
+stkmgr_return_stack
+valloc_alloc
+valloc_free

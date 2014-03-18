@@ -1,0 +1,6 @@
+sched_child_cntl_thd_inv
+sched_child_get_evt_inv
+sched_child_thd_crt_inv
+sched_exit_inv
+sched_init_inv
+sched_isroot_inv

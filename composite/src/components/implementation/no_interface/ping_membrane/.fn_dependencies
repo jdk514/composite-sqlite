@@ -1,0 +1,4 @@
+call_server
+call_server_x
+print_char
+sched_create_thd

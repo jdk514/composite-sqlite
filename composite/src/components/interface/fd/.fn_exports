@@ -1,0 +1,11 @@
+cos_accept_inv
+cos_app_open_inv
+cos_bind_inv
+cos_close_inv
+cos_listen_inv
+cos_read_inv
+cos_socket_inv
+cos_split_inv
+cos_wait_all_inv
+cos_wait_inv
+cos_write_inv

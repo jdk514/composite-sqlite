@@ -1,0 +1,3 @@
+sched_tick_freq
+stkmgr_grant_stack
+stkmgr_return_stack

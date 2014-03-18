@@ -1,0 +1,3 @@
+call_cbuf2
+print_char
+sched_create_thd

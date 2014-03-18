@@ -1,0 +1,10 @@
+net_create_udp_connection
+net_create_tcp_connection
+net_listen
+net_accept_data
+net_bind
+net_connect
+net_send
+net_recv
+net_accept
+net_close

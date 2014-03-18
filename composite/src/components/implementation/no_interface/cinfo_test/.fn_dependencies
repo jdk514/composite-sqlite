@@ -1,0 +1,6 @@
+cinfo_get_spdid
+cinfo_map
+print_char
+sched_block
+stkmgr_grant_stack
+stkmgr_return_stack

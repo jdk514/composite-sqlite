@@ -1,0 +1,2 @@
+fault_div_zero_handler
+fault_page_fault_handler

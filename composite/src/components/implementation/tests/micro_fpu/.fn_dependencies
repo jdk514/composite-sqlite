@@ -1,0 +1,6 @@
+print_char
+sched_block
+sched_create_thd
+sched_wakeup
+stkmgr_grant_stack
+stkmgr_return_stack

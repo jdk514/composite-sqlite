@@ -1,0 +1,5 @@
+__mman_alias_page_inv
+mman_get_page_inv
+mman_print_stats_inv
+mman_release_page_inv
+mman_revoke_page_inv

@@ -1,0 +1,8 @@
+luakv_getnumber
+luakv_putstring_bytable
+luakv_getstring
+luakv_getnumber_bytable
+luakv_putstring
+luakv_putnumber_bytable
+luakv_getstring_bytable
+luakv_putnumber

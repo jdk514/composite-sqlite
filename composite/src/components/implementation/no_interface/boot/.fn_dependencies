@@ -1,0 +1,7 @@
+__mman_alias_page
+mman_get_page
+mman_release_page
+print_char
+sched_component_release
+sched_component_take
+sched_create_thread_default

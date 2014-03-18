@@ -1,0 +1,5 @@
+mempool_get_mem
+mempool_put_mem
+mempool_clear_glb_blked
+mempool_tmem_mgr_event_waiting
+mempool_set_mgr_desired

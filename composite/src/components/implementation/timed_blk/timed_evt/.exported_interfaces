@@ -1,0 +1,10 @@
+periodic_wake_get_period
+periodic_wake_remove
+timed_event_wakeup
+timed_event_block
+periodic_wake_get_lateness
+periodic_wake_get_deadlines
+periodic_wake_get_miss_lateness
+periodic_wake_wait
+periodic_wake_create
+periodic_wake_get_misses

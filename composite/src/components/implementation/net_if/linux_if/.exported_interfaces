@@ -1,0 +1,5 @@
+netif_event_release
+netif_event_create
+netif_upcall_cyc
+netif_event_xmit
+netif_event_wait

@@ -1,0 +1,14 @@
+acap_cli_lookup_inv
+acap_cli_lookup_ring_inv
+acap_srv_fn_mapping_inv
+acap_srv_lookup_inv
+acap_srv_lookup_ring_inv
+acap_srv_ncaps_inv
+par_acap_get_barrier_inv
+par_acap_lookup_inv
+par_create_inv
+par_parent_lookup_inv
+par_ring_lookup_inv
+par_srv_acap_lookup_inv
+par_srv_ring_lookup_inv
+par_srv_thd_num_lookup_inv

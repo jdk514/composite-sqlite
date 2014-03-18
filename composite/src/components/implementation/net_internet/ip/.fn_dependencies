@@ -1,0 +1,6 @@
+netif_event_create
+netif_event_release
+netif_event_wait
+netif_event_xmit
+stkmgr_grant_stack
+stkmgr_return_stack

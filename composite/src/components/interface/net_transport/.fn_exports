@@ -1,0 +1,10 @@
+net_accept_data_inv
+net_accept_inv
+net_bind_inv
+net_close_inv
+net_connect_inv
+net_create_tcp_connection_inv
+net_create_udp_connection_inv
+net_listen_inv
+net_recv_inv
+net_send_inv

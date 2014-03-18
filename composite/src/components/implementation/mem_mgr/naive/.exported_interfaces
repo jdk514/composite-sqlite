@@ -1,0 +1,11 @@
+sched_child_cntl_thd
+sched_isroot
+sched_exit
+__mman_alias_page
+sched_init
+mman_revoke_page
+mman_print_stats
+sched_child_thd_crt
+mman_get_page
+mman_release_page
+sched_child_get_evt

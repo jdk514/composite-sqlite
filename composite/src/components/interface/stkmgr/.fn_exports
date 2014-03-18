@@ -1,0 +1,12 @@
+stkmgr_detect_suspension_inv
+stkmgr_get_allocated_inv
+stkmgr_grant_stack_inv
+stkmgr_return_stack_inv
+stkmgr_set_concurrency_inv
+stkmgr_set_over_quota_limit_inv
+stkmgr_set_suspension_limit_inv
+stkmgr_spd_concurrency_estimate_inv
+stkmgr_stack_introspect_inv
+stkmgr_stack_report_inv
+stkmgr_thd_blk_cnt_inv
+stkmgr_thd_blk_time_inv

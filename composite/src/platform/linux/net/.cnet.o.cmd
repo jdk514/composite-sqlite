@@ -1,0 +1,1 @@
+cmd_/home/cos/git/composite-sqlite/composite/src/platform/linux/net/cnet.o := ld -m elf_i386   -r -o /home/cos/git/composite-sqlite/composite/src/platform/linux/net/cnet.o /home/cos/git/composite-sqlite/composite/src/platform/linux/net/cosnet.o 

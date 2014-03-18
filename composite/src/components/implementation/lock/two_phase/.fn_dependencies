@@ -1,0 +1,7 @@
+mman_get_page
+mman_release_page
+print_char
+sched_block
+sched_component_release
+sched_component_take
+sched_wakeup

@@ -1,0 +1,15 @@
+cbuf_c_register
+cbuf_c_introspect
+cbufmgr_thd_blk_cnt
+cbuf_c_delete
+cbufmgr_thd_blk_time
+cbufmgr_set_concurrency
+cbuf_c_retrieve
+cbuf_c_claim
+cbufmgr_spd_concurrency_estimate
+cbuf_c_create
+cbufmgr_set_over_quota_limit
+cbufmgr_get_allocated
+cbufmgr_detect_suspension
+cbufmgr_buf_report
+cbufmgr_set_suspension_limit

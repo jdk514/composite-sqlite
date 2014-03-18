@@ -1,0 +1,4 @@
+mman_get_page
+mman_release_page
+print_char
+sched_block

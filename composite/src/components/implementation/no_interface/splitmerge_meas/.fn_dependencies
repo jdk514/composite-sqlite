@@ -1,0 +1,7 @@
+evt_create
+evt_trigger
+evt_wait_n
+print_char
+sched_create_thd
+stkmgr_grant_stack
+stkmgr_return_stack

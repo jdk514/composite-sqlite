@@ -1,0 +1,5 @@
+cbufp_collect_inv
+cbufp_create_inv
+cbufp_delete_inv
+cbufp_register_inv
+cbufp_retrieve_inv

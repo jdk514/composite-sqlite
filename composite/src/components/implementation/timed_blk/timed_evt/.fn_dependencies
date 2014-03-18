@@ -1,0 +1,15 @@
+mman_get_page
+mman_release_page
+print_char
+sched_block
+sched_component_release
+sched_component_take
+sched_create_thd
+sched_cyc_per_tick
+sched_tick_freq
+sched_timeout
+sched_timeout_thd
+sched_timestamp
+sched_wakeup
+valloc_alloc
+valloc_free

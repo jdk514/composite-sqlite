@@ -1,0 +1,7 @@
+lock_component_alloc
+lock_component_pretake
+lock_component_release
+lock_component_take
+print_char
+stkmgr_grant_stack
+stkmgr_return_stack

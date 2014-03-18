@@ -1,0 +1,15 @@
+cbuf_c_claim_inv
+cbuf_c_create_inv
+cbuf_c_delete_inv
+cbuf_c_introspect_inv
+cbuf_c_register_inv
+cbuf_c_retrieve_inv
+cbufmgr_buf_report_inv
+cbufmgr_detect_suspension_inv
+cbufmgr_get_allocated_inv
+cbufmgr_set_concurrency_inv
+cbufmgr_set_over_quota_limit_inv
+cbufmgr_set_suspension_limit_inv
+cbufmgr_spd_concurrency_estimate_inv
+cbufmgr_thd_blk_cnt_inv
+cbufmgr_thd_blk_time_inv

@@ -1,0 +1,4 @@
+print_char
+sched_create_thd
+stkmgr_grant_stack
+stkmgr_return_stack

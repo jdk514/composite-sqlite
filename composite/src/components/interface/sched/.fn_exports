@@ -1,0 +1,16 @@
+sched_block_inv
+sched_component_release_inv
+sched_component_take_inv
+sched_create_net_acap_inv
+sched_create_thd_inv
+sched_create_thread_default_inv
+sched_create_thread_inv
+sched_cyc_per_tick_inv
+sched_priority_inv
+sched_thread_params_inv
+sched_tick_freq_inv
+sched_timeout_inv
+sched_timeout_thd_inv
+sched_timer_stopclock_inv
+sched_timestamp_inv
+sched_wakeup_inv

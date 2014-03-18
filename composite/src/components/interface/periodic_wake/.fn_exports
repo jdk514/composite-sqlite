@@ -1,0 +1,8 @@
+periodic_wake_create_inv
+periodic_wake_get_deadlines_inv
+periodic_wake_get_lateness_inv
+periodic_wake_get_miss_lateness_inv
+periodic_wake_get_misses_inv
+periodic_wake_get_period_inv
+periodic_wake_remove_inv
+periodic_wake_wait_inv
