@@ -1,0 +1,20 @@
+These are options to append when recompiling sqlite
+-This is done to limit dependencies and FS calls
+
+-define only memory for temp files
+SQLITE_TEMP_STORE=3
+
+-disable large file support
+SQLITE_DISABLE_LFS
+
+-disable directory sync
+SQLITE_DISABLE_DIRSYNC
+
+-diable diskIO, may not work??
+SQLITE_OMIT_DISKIO
+
+
+Optional/Possibly Helfpul compilation options:
+
+-enable logging
+SQLITE_ENABLE_SQLLOG
