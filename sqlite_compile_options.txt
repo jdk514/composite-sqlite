@@ -1,6 +1,9 @@
 These are options to append when recompiling sqlite
 -This is done to limit dependencies and FS calls
 
+compile sqlite3.c and sqlite_test.c by 'gcc -c filename'
+build test executable by running 'gcc -pthread -ldl sqlite_test.o sqlite3.o -o test'
+
 -define only memory for temp files
 SQLITE_TEMP_STORE=3
 

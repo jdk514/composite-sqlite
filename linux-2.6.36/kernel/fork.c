@@ -513,9 +513,6 @@ struct mm_struct * mm_alloc(void)
 	}
 	return mm;
 }
-/* gparmer@gwu.edu: exported for composite */
-EXPORT_SYMBOL(mm_alloc);
-
 
 /*
  * Called when the last reference to the mm

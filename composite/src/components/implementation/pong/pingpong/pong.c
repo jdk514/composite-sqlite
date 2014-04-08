@@ -4,4 +4,7 @@
 
 //volatile int f;
 //void call(void) { f = *(int*)NULL; return; }
-void call(void) { return; }
+void call(void) { 
+	return;
+}
+
