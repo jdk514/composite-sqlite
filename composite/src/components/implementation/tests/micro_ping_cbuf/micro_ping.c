@@ -109,7 +109,7 @@ cbuf_tests(void)
 	printc("%d alloc-cbuf2buf-free %llu cycles avg\n", ITER, (end-start)/ITER);
 
 	printc("<<< CBUF_ALLOC-CBUF2BUF-CBUF_FREE MICRO-BENCHMARK TEST DONE >>>\n");
-
+	printc("JOEL KLEIN WAS HERE");
 	return;
 }
 
