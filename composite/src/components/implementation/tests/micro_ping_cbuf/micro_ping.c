@@ -4,6 +4,8 @@
 #include <sched.h>
 #include <micro_pong.h>
 #include <cbuf.h>
+#include <valloc.h>
+#include "sqlite3.h"
 
 #define ITER 2000
 #define MAX_SZ 4096
@@ -27,7 +29,7 @@ cbuf_tests(void)
 	}
 
         /* RDTSCLL */
-	printc("\n<<< RDTSCLL MICRO-BENCHMARK TEST >>>\n");
+	printc("\n<<< RDTSCLL MICRO-BENCHMARK TEST sqlite2>>>\n");
 	rdtscll(start_tmp);
 	for (i = 0 ; i < ITER ; i++) {
 		rdtscll(start);
@@ -109,7 +111,7 @@ cbuf_tests(void)
 	printc("%d alloc-cbuf2buf-free %llu cycles avg\n", ITER, (end-start)/ITER);
 
 	printc("<<< CBUF_ALLOC-CBUF2BUF-CBUF_FREE MICRO-BENCHMARK TEST DONE >>>\n");
-	printc("JOEL KLEIN WAS HERE");
+
 	return;
 }
 
@@ -227,6 +229,26 @@ void
 cos_init(void)
 {
 	printc("\nMICRO BENCHMARK TEST (PINGPONG WITH CBUF & CBUFP)\n");
+	printc("\nstep1\n");
+	sqlite3 *db;
+	printc("\nstep2\n");
+	char *zErrMsg = 0;
+        printc("\nstep3\n");
+	int rc;
+        printc("\nstep4\n");
+	char *sql;
+        printc("\nstep5\n");
+
+	printc("\n did we change config %d\n", sqlite3_config(SQLITE_CONFIG_MALLOC, &valloc_alloc));
+	/* Open database */
+	rc = sqlite3_open(':memory:', &db);
+	printc("\nstep6\n");
+	if (rc) {
+		printc("\nCan't open database: %s\n", sqlite3_errmsg(db));
+	} else {
+		printc("\nOpened database successfully\n");
+	}
+	printc("\nstep7\n");
 
 	cbuf_tests();
 	cbufp_tests();

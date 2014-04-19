@@ -1,4 +1,4 @@
-C_OBJS=micro_ping.o
+C_OBJS=micro_ping.o sqlite3.o
 ASM_OBJS=
 COMPONENT=micro_pingp.o
 INTERFACES=

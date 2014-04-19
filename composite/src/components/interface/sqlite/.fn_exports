@@ -1,0 +1,5 @@
+sqlite3_close_inv
+sqlite3_errmsg_inv
+sqlite3_exec_inv
+sqlite3_free_inv
+sqlite3_open_inv
