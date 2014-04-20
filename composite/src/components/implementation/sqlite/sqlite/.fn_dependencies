@@ -6,7 +6,6 @@ cbufp_collect
 cbufp_create
 cbufp_register
 cbufp_retrieve
-evt_split
 lock_component_alloc
 lock_component_pretake
 lock_component_release
@@ -16,10 +15,5 @@ mman_release_page
 print_char
 stkmgr_grant_stack
 stkmgr_return_stack
-tread
-treadp
-trelease
-tsplit
-twrite
 valloc_alloc
 valloc_free

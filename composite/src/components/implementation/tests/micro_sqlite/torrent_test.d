@@ -49,4 +49,5 @@ torrent_test.o torrent_test.d : torrent_test.c \
  /home/cos//research//composite/src//components//interface//cbuf_c/tmem_conf.h \
  /home/cos//research//composite/src//components//interface//cbuf_c/cbuf_meta.h \
  /home/cos//research//composite/src//components//interface//evt/evt.h \
- /home/cos//research//composite/src//components//interface//torrent/torrent.h
+ /home/cos//research//composite/src//components//interface//torrent/torrent.h \
+ /home/cos//research//composite/src//components//interface//timed_blk/timed_blk.h

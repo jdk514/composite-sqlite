@@ -1,7 +1,7 @@
-C_OBJS=sqlite_main.o
+C_OBJS=sqlite3.o
 ASM_OBJS=
 COMPONENT=sqlite.o
-INTERFACES=sqlite
+INTERFACES=
 DEPENDENCIES=sqlite printc torrent sched cbufp cbuf_c evt mem_mgr_large valloc lock
 IF_LIB=
 

@@ -14,8 +14,10 @@ lock_component_take
 mman_get_page
 mman_release_page
 print_char
+sched_create_thd
 stkmgr_grant_stack
 stkmgr_return_stack
+tread
 treadp
 trelease
 tsplit

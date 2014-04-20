@@ -1,1 +1,1 @@
-cmd_/home/cos/git/composite-sqlite/composite/src/platform/linux/translator/trans.o := ld -m elf_i386   -r -o /home/cos/git/composite-sqlite/composite/src/platform/linux/translator/trans.o /home/cos/git/composite-sqlite/composite/src/platform/linux/translator/translator.o 
+cmd_/home/cos/git/Composite/src/platform/linux/translator/trans.o := ld -m elf_i386   -r -o /home/cos/git/Composite/src/platform/linux/translator/trans.o /home/cos/git/Composite/src/platform/linux/translator/translator.o 
