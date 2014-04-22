@@ -1,4 +1,0 @@
-INTERFACES=
-
-include ../Makefile.subdir
-

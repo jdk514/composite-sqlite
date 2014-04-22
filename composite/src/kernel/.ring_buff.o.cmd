@@ -1,15 +1,15 @@
-cmd_/home/cos/git/Composite/src/platform/linux/module/../../../kernel/ring_buff.o := gcc -Wp,-MD,/home/cos/git/Composite/src/platform/linux/module/../../../kernel/.ring_buff.o.d  -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.4.3/include -I/home/cos/research/linux-2.6.36/arch/x86/include -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -m32 -msoft-float -mregparm=3 -freg-struct-return -mpreferred-stack-boundary=2 -march=i686 -mtune=core2 -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -Wframe-larger-than=1024 -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(ring_buff)"  -D"KBUILD_MODNAME=KBUILD_STR(cos)"  -c -o /home/cos/git/Composite/src/platform/linux/module/../../../kernel/ring_buff.o /home/cos/git/Composite/src/platform/linux/module/../../../kernel/ring_buff.c
+cmd_/home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/ring_buff.o := gcc -Wp,-MD,/home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/.ring_buff.o.d  -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.4.3/include -I/home/cos/research/linux-2.6.36/arch/x86/include -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -m32 -msoft-float -mregparm=3 -freg-struct-return -mpreferred-stack-boundary=2 -march=i686 -mtune=core2 -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -Wframe-larger-than=1024 -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(ring_buff)"  -D"KBUILD_MODNAME=KBUILD_STR(cos)"  -c -o /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/ring_buff.o /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/ring_buff.c
 
-deps_/home/cos/git/Composite/src/platform/linux/module/../../../kernel/ring_buff.o := \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/ring_buff.c \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/debug.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/shared/cos_config.h \
+deps_/home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/ring_buff.o := \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/ring_buff.c \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/debug.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/shared/cos_config.h \
     $(wildcard include/config/h.h) \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/shared/cpu_ghz.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/thread.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/spd.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/shared/cos_types.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/shared/./consts.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/shared/cpu_ghz.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/thread.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/spd.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/shared/cos_types.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/shared/./consts.h \
     $(wildcard include/config/page/offset.h) \
   include/linux/thread_info.h \
     $(wildcard include/config/compat.h) \
@@ -206,15 +206,15 @@ deps_/home/cos/git/Composite/src/platform/linux/module/../../../kernel/ring_buff
   /home/cos/research/linux-2.6.36/arch/x86/include/asm/atomic.h \
   /home/cos/research/linux-2.6.36/arch/x86/include/asm/atomic64_32.h \
   include/asm-generic/atomic-long.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/shared/./../asm_ipc_defs.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/shared/../debug.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/shared/../shared/cos_config.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/shared/../measurement.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/shared/../cpuid.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/shared/../shared/consts.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/shared/consts.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/chal.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/../../platform/include/chal_plat.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/shared/./../asm_ipc_defs.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/shared/../debug.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/shared/../shared/cos_config.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/shared/../measurement.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/shared/../cpuid.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/shared/../shared/consts.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/shared/consts.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/chal.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/../../platform/include/chal_plat.h \
   include/linux/sched.h \
     $(wildcard include/config/sched/debug.h) \
     $(wildcard include/config/prove/rcu.h) \
@@ -500,12 +500,12 @@ deps_/home/cos/git/Composite/src/platform/linux/module/../../../kernel/ring_buff
   include/linux/aio.h \
   include/linux/aio_abi.h \
   include/linux/uio.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/debug.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/per_cpu.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/cpuid.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/fpu_regs.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/chal.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/debug.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/per_cpu.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/cpuid.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/fpu_regs.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/chal.h \
 
-/home/cos/git/Composite/src/platform/linux/module/../../../kernel/ring_buff.o: $(deps_/home/cos/git/Composite/src/platform/linux/module/../../../kernel/ring_buff.o)
+/home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/ring_buff.o: $(deps_/home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/ring_buff.o)
 
-$(deps_/home/cos/git/Composite/src/platform/linux/module/../../../kernel/ring_buff.o):
+$(deps_/home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/ring_buff.o):

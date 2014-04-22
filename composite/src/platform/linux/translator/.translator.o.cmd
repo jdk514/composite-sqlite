@@ -1,7 +1,7 @@
-cmd_/home/cos/git/Composite/src/platform/linux/translator/translator.o := gcc -Wp,-MD,/home/cos/git/Composite/src/platform/linux/translator/.translator.o.d  -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.4.3/include -I/home/cos/research/linux-2.6.36/arch/x86/include -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -m32 -msoft-float -mregparm=3 -freg-struct-return -mpreferred-stack-boundary=2 -march=i686 -mtune=core2 -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -Wframe-larger-than=1024 -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(translator)"  -D"KBUILD_MODNAME=KBUILD_STR(trans)"  -c -o /home/cos/git/Composite/src/platform/linux/translator/translator.o /home/cos/git/Composite/src/platform/linux/translator/translator.c
+cmd_/home/cos/git/composite-sqlite/composite/src/platform/linux/translator/translator.o := gcc -Wp,-MD,/home/cos/git/composite-sqlite/composite/src/platform/linux/translator/.translator.o.d  -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.4.3/include -I/home/cos/research/linux-2.6.36/arch/x86/include -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -m32 -msoft-float -mregparm=3 -freg-struct-return -mpreferred-stack-boundary=2 -march=i686 -mtune=core2 -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -Wframe-larger-than=1024 -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(translator)"  -D"KBUILD_MODNAME=KBUILD_STR(trans)"  -c -o /home/cos/git/composite-sqlite/composite/src/platform/linux/translator/translator.o /home/cos/git/composite-sqlite/composite/src/platform/linux/translator/translator.c
 
-deps_/home/cos/git/Composite/src/platform/linux/translator/translator.o := \
-  /home/cos/git/Composite/src/platform/linux/translator/translator.c \
+deps_/home/cos/git/composite-sqlite/composite/src/platform/linux/translator/translator.o := \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/translator/translator.c \
   include/linux/module.h \
     $(wildcard include/config/symbol/prefix.h) \
     $(wildcard include/config/modules.h) \
@@ -610,18 +610,18 @@ deps_/home/cos/git/Composite/src/platform/linux/translator/translator.o := \
     $(wildcard include/config/x86/intel/usercopy.h) \
   /home/cos/research/linux-2.6.36/arch/x86/include/asm/uaccess_32.h \
     $(wildcard include/config/debug/strict/user/copy/checks.h) \
-  /home/cos/git/Composite/src/platform/linux/translator/translator_ioctl.h \
-  /home/cos/git/Composite/src/platform/linux/translator/../../../kernel/include/shared/cos_types.h \
-  /home/cos/git/Composite/src/platform/linux/translator/../../../kernel/include/shared/./consts.h \
-  /home/cos/git/Composite/src/platform/linux/translator/../../../kernel/include/shared/./../asm_ipc_defs.h \
-  /home/cos/git/Composite/src/platform/linux/translator/../../../kernel/include/shared/../debug.h \
-  /home/cos/git/Composite/src/platform/linux/translator/../../../kernel/include/shared/../shared/cos_config.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/translator/translator_ioctl.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/translator/../../../kernel/include/shared/cos_types.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/translator/../../../kernel/include/shared/./consts.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/translator/../../../kernel/include/shared/./../asm_ipc_defs.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/translator/../../../kernel/include/shared/../debug.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/translator/../../../kernel/include/shared/../shared/cos_config.h \
     $(wildcard include/config/h.h) \
-  /home/cos/git/Composite/src/platform/linux/translator/../../../kernel/include/shared/../shared/cpu_ghz.h \
-  /home/cos/git/Composite/src/platform/linux/translator/../../../kernel/include/shared/../measurement.h \
-  /home/cos/git/Composite/src/platform/linux/translator/../../../kernel/include/shared/../cpuid.h \
-  /home/cos/git/Composite/src/platform/linux/translator/../../../kernel/include/shared/../shared/consts.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/translator/../../../kernel/include/shared/../shared/cpu_ghz.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/translator/../../../kernel/include/shared/../measurement.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/translator/../../../kernel/include/shared/../cpuid.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/translator/../../../kernel/include/shared/../shared/consts.h \
 
-/home/cos/git/Composite/src/platform/linux/translator/translator.o: $(deps_/home/cos/git/Composite/src/platform/linux/translator/translator.o)
+/home/cos/git/composite-sqlite/composite/src/platform/linux/translator/translator.o: $(deps_/home/cos/git/composite-sqlite/composite/src/platform/linux/translator/translator.o)
 
-$(deps_/home/cos/git/Composite/src/platform/linux/translator/translator.o):
+$(deps_/home/cos/git/composite-sqlite/composite/src/platform/linux/translator/translator.o):

@@ -1,7 +1,7 @@
-cmd_/home/cos/git/Composite/src/platform/linux/translator/trans.mod.o := gcc -Wp,-MD,/home/cos/git/Composite/src/platform/linux/translator/.trans.mod.o.d  -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.4.3/include -I/home/cos/research/linux-2.6.36/arch/x86/include -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -m32 -msoft-float -mregparm=3 -freg-struct-return -mpreferred-stack-boundary=2 -march=i686 -mtune=core2 -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -Wframe-larger-than=1024 -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(trans.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(trans)"  -DMODULE  -c -o /home/cos/git/Composite/src/platform/linux/translator/trans.mod.o /home/cos/git/Composite/src/platform/linux/translator/trans.mod.c
+cmd_/home/cos/git/composite-sqlite/composite/src/platform/linux/translator/trans.mod.o := gcc -Wp,-MD,/home/cos/git/composite-sqlite/composite/src/platform/linux/translator/.trans.mod.o.d  -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.4.3/include -I/home/cos/research/linux-2.6.36/arch/x86/include -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -m32 -msoft-float -mregparm=3 -freg-struct-return -mpreferred-stack-boundary=2 -march=i686 -mtune=core2 -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -Wframe-larger-than=1024 -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(trans.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(trans)"  -DMODULE  -c -o /home/cos/git/composite-sqlite/composite/src/platform/linux/translator/trans.mod.o /home/cos/git/composite-sqlite/composite/src/platform/linux/translator/trans.mod.c
 
-deps_/home/cos/git/Composite/src/platform/linux/translator/trans.mod.o := \
-  /home/cos/git/Composite/src/platform/linux/translator/trans.mod.c \
+deps_/home/cos/git/composite-sqlite/composite/src/platform/linux/translator/trans.mod.o := \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/translator/trans.mod.c \
     $(wildcard include/config/module/unload.h) \
   include/linux/module.h \
     $(wildcard include/config/symbol/prefix.h) \
@@ -452,6 +452,6 @@ deps_/home/cos/git/Composite/src/platform/linux/translator/trans.mod.o := \
   include/linux/vermagic.h \
   include/generated/utsrelease.h \
 
-/home/cos/git/Composite/src/platform/linux/translator/trans.mod.o: $(deps_/home/cos/git/Composite/src/platform/linux/translator/trans.mod.o)
+/home/cos/git/composite-sqlite/composite/src/platform/linux/translator/trans.mod.o: $(deps_/home/cos/git/composite-sqlite/composite/src/platform/linux/translator/trans.mod.o)
 
-$(deps_/home/cos/git/Composite/src/platform/linux/translator/trans.mod.o):
+$(deps_/home/cos/git/composite-sqlite/composite/src/platform/linux/translator/trans.mod.o):

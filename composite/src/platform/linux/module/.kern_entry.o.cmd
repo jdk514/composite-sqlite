@@ -1,7 +1,7 @@
-cmd_/home/cos/git/Composite/src/platform/linux/module/kern_entry.o := gcc -Wp,-MD,/home/cos/git/Composite/src/platform/linux/module/.kern_entry.o.d  -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.4.3/include -I/home/cos/research/linux-2.6.36/arch/x86/include -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -D__ASSEMBLY__ -m32 -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1  -gdwarf-2      -DMODULE  -c -o /home/cos/git/Composite/src/platform/linux/module/kern_entry.o /home/cos/git/Composite/src/platform/linux/module/kern_entry.S
+cmd_/home/cos/git/composite-sqlite/composite/src/platform/linux/module/kern_entry.o := gcc -Wp,-MD,/home/cos/git/composite-sqlite/composite/src/platform/linux/module/.kern_entry.o.d  -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.4.3/include -I/home/cos/research/linux-2.6.36/arch/x86/include -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -D__ASSEMBLY__ -m32 -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1  -gdwarf-2      -DMODULE  -c -o /home/cos/git/composite-sqlite/composite/src/platform/linux/module/kern_entry.o /home/cos/git/composite-sqlite/composite/src/platform/linux/module/kern_entry.S
 
-deps_/home/cos/git/Composite/src/platform/linux/module/kern_entry.o := \
-  /home/cos/git/Composite/src/platform/linux/module/kern_entry.S \
+deps_/home/cos/git/composite-sqlite/composite/src/platform/linux/module/kern_entry.o := \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/kern_entry.S \
   /home/cos/research/linux-2.6.36/arch/x86/include/asm/asm-offsets.h \
   include/generated/asm-offsets.h \
   /home/cos/research/linux-2.6.36/arch/x86/include/asm/segment.h \
@@ -56,13 +56,13 @@ deps_/home/cos/git/Composite/src/platform/linux/module/kern_entry.o := \
   /home/cos/research/linux-2.6.36/arch/x86/include/asm/linkage.h \
     $(wildcard include/config/x86/alignment/16.h) \
   include/linux/stringify.h \
-  /home/cos/git/Composite/src/platform/linux/module/asym_exec_dom.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/asm_ipc_defs.h \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/shared/cos_config.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/asym_exec_dom.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/asm_ipc_defs.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/shared/cos_config.h \
     $(wildcard include/config/h.h) \
-  /home/cos/git/Composite/src/platform/linux/module/../../../kernel/include/shared/cpu_ghz.h \
-  /home/cos/git/Composite/src/platform/linux/module/cos_irq_vectors.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/../../../kernel/include/shared/cpu_ghz.h \
+  /home/cos/git/composite-sqlite/composite/src/platform/linux/module/cos_irq_vectors.h \
 
-/home/cos/git/Composite/src/platform/linux/module/kern_entry.o: $(deps_/home/cos/git/Composite/src/platform/linux/module/kern_entry.o)
+/home/cos/git/composite-sqlite/composite/src/platform/linux/module/kern_entry.o: $(deps_/home/cos/git/composite-sqlite/composite/src/platform/linux/module/kern_entry.o)
 
-$(deps_/home/cos/git/Composite/src/platform/linux/module/kern_entry.o):
+$(deps_/home/cos/git/composite-sqlite/composite/src/platform/linux/module/kern_entry.o):

@@ -6,10 +6,10 @@
 make  --no-print-directory -I /home/cos/research/composite/src -C components
 components makeflag  --no-print-directory
 ####### Stack Manager is Enabled #######
-make  --no-print-directory -I /home/cos/research/composite/src -I /home/cos/research/composite/src -I /home/cos/git/Composite/src/components -C lib
+make  --no-print-directory -I /home/cos/research/composite/src -I /home/cos/research/composite/src -I /home/cos/git/composite-sqlite/composite/src/components -C lib
 |     [CC]   Creating library file heap.a from heap.c
 |     [CC]   Creating library file cobj_format.a from cobj_format.c
-make  --no-print-directory -I /home/cos/research/composite/src -I /home/cos/research/composite/src -I /home/cos/git/Composite/src/components -C interface
+make  --no-print-directory -I /home/cos/research/composite/src -I /home/cos/research/composite/src -I /home/cos/git/composite-sqlite/composite/src/components -C interface
 ***********************************************
 ************[ Building interfaces ]************
 ***********************************************
@@ -20,7 +20,7 @@ rm cos_alloc.o
 rm parlib.o
 rm printc.o
 rm printt.o
-make  --no-print-directory -I /home/cos/research/composite/src -I /home/cos/research/composite/src -I /home/cos/git/Composite/src/components -C implementation
+make  --no-print-directory -I /home/cos/research/composite/src -I /home/cos/research/composite/src -I /home/cos/git/composite-sqlite/composite/src/components -C implementation
 ***********************************************
 *********[ Building Implementations ]**********
 ***********************************************
@@ -43,23 +43,6 @@ Warning: in component mem_mgr.hier, function mman_revoke_page defined in an inte
 |     [LD]   no_interface.edge_detect (edge_detect.o): Linking -lprintc -lcbuf_c -lmem_mgr_large -llock canny.o cos_libccv.a /home/cos//research//composite/src//components//lib/dietlibc-0.29/bin-i386/libm.a /home/cos//research//composite/src//components//lib/posix/posix.o
 |     [CP]   copying cos_libccv.a from libccv
 |     [LD]   no_interface.face_detect (face_detect.o): Linking -lprintc -lcbuf_c -lmem_mgr_large -llock fd.o cos_libccv.a /home/cos//research//composite/src//components//lib/dietlibc-0.29/bin-i386/libm.a /home/cos//research//composite/src//components//lib/posix/posix.o
-|     [CC]   sqlite3.c: Compiling
-sqlite3.c:7995:1: warning: "likely" redefined
-In file included from sqlite3.c:21:
-/home/cos//research//composite/src//components//include/cos_component.h:392:1: warning: this is the location of the previous definition
-sqlite3.c:7996:1: warning: "unlikely" redefined
-/home/cos//research//composite/src//components//include/cos_component.h:393:1: warning: this is the location of the previous definition
-In file included from /home/cos//research//composite/src//components//lib/dietlibc-0.29/include/time.h:7,
-                 from sqlite3.c:14463:
-/home/cos//research//composite/src//components//lib/dietlibc-0.29/include/unistd.h:68: warning: conflicting types for built-in function ‘execl’
-/home/cos//research//composite/src//components//lib/dietlibc-0.29/include/unistd.h:69: warning: conflicting types for built-in function ‘execle’
-sqlite3.c: In function ‘main’:
-sqlite3.c:95485: warning: ‘return’ with no value, in function returning non-void
-sqlite3.c:95489: warning: ‘return’ with no value, in function returning non-void
-sqlite3.c: At top level:
-sqlite3.c:96724: warning: missing initializer
-sqlite3.c:96724: warning: (near initialization for ‘sqlite3Apis.aggregate_count’)
-|     [LD]   sqlite.sqlite (sqlite.o): Linking -lprintc -lcbuf_c -lmem_mgr_large -llock sqlite3.o
 |     [CP]   copying cos_libccv.a from libccv
 |     [LD]   tests.unit_posix (posix_t.o): Linking -lprintc -lcbuf_c -lmem_mgr_large -llock posix_test.o cos_libccv.a /home/cos//research//composite/src//components//lib/dietlibc-0.29/bin-i386/libm.a /home/cos//research//composite/src//components//lib/posix/posix.o
 |     [CP]   copying network stack from lwip
@@ -72,28 +55,28 @@ sqlite3.c:96724: warning: (near initialization for ‘sqlite3Apis.aggregate_coun
 make  --no-print-directory -I /home/cos/research/composite/src -C platform
 make -C linux
 make -C module
-make -C /home/cos//research//linux-2.6.36/ SUBDIRS=/home/cos/git/Composite/src/platform/linux/module modules
+make -C /home/cos//research//linux-2.6.36/ SUBDIRS=/home/cos/git/composite-sqlite/composite/src/platform/linux/module modules
   Building modules, stage 2.
   MODPOST 1 modules
 make -C net
-make -C /home/cos//research//linux-2.6.36/ SUBDIRS=/home/cos/git/Composite/src/platform/linux/net modules
+make -C /home/cos//research//linux-2.6.36/ SUBDIRS=/home/cos/git/composite-sqlite/composite/src/platform/linux/net modules
   Building modules, stage 2.
   MODPOST 1 modules
-WARNING: "host_start_syscall" [/home/cos/git/Composite/src/platform/linux/net/cnet.ko] undefined!
-WARNING: "cos_net_try_acap" [/home/cos/git/Composite/src/platform/linux/net/cnet.ko] undefined!
-WARNING: "host_end_syscall" [/home/cos/git/Composite/src/platform/linux/net/cnet.ko] undefined!
-WARNING: "cos_net_meas_packet" [/home/cos/git/Composite/src/platform/linux/net/cnet.ko] undefined!
-WARNING: "cos_net_register" [/home/cos/git/Composite/src/platform/linux/net/cnet.ko] undefined!
-WARNING: "cos_net_deregister" [/home/cos/git/Composite/src/platform/linux/net/cnet.ko] undefined!
+WARNING: "host_start_syscall" [/home/cos/git/composite-sqlite/composite/src/platform/linux/net/cnet.ko] undefined!
+WARNING: "cos_net_try_acap" [/home/cos/git/composite-sqlite/composite/src/platform/linux/net/cnet.ko] undefined!
+WARNING: "host_end_syscall" [/home/cos/git/composite-sqlite/composite/src/platform/linux/net/cnet.ko] undefined!
+WARNING: "cos_net_meas_packet" [/home/cos/git/composite-sqlite/composite/src/platform/linux/net/cnet.ko] undefined!
+WARNING: "cos_net_register" [/home/cos/git/composite-sqlite/composite/src/platform/linux/net/cnet.ko] undefined!
+WARNING: "cos_net_deregister" [/home/cos/git/composite-sqlite/composite/src/platform/linux/net/cnet.ko] undefined!
 make -C util
 make[4]: Nothing to be done for `all'.
 make -C translator
-make -C /home/cos//research//linux-2.6.36/ SUBDIRS=/home/cos/git/Composite/src/platform/linux/translator modules
+make -C /home/cos//research//linux-2.6.36/ SUBDIRS=/home/cos/git/composite-sqlite/composite/src/platform/linux/translator modules
   Building modules, stage 2.
   MODPOST 1 modules
-WARNING: "cos_trans_dereg" [/home/cos/git/Composite/src/platform/linux/translator/trans.ko] undefined!
-WARNING: "cos_trans_reg" [/home/cos/git/Composite/src/platform/linux/translator/trans.ko] undefined!
-WARNING: "cos_trans_upcall" [/home/cos/git/Composite/src/platform/linux/translator/trans.ko] undefined!
+WARNING: "cos_trans_dereg" [/home/cos/git/composite-sqlite/composite/src/platform/linux/translator/trans.ko] undefined!
+WARNING: "cos_trans_reg" [/home/cos/git/composite-sqlite/composite/src/platform/linux/translator/trans.ko] undefined!
+WARNING: "cos_trans_upcall" [/home/cos/git/composite-sqlite/composite/src/platform/linux/translator/trans.ko] undefined!
 make -C helpers 
 make[5]: `ctol_meas' is up to date.
 make[5]: `ltoc_meas' is up to date.
@@ -124,5 +107,5 @@ cp ./util/*.sh ./util/*.py ./util/*.tar /home/cos//transfer/
 make  --no-print-directory -I /home/cos/research/composite/src -C components cp
 components makeflag  --no-print-directory
 ####### Stack Manager is Enabled #######
-make  --no-print-directory -I /home/cos/research/composite/src -I /home/cos/research/composite/src -I /home/cos/git/Composite/src/components -C implementation cp
+make  --no-print-directory -I /home/cos/research/composite/src -I /home/cos/research/composite/src -I /home/cos/git/composite-sqlite/composite/src/components -C implementation cp
 |     [CP]   Copying all components to /home/cos//transfer/

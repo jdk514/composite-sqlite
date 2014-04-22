@@ -1,5 +1,0 @@
-sqlite3_free
-sqlite3_close
-sqlite3_errmsg
-sqlite3_exec
-sqlite3_open
