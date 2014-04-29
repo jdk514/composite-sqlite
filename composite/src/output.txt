@@ -43,10 +43,6 @@ Warning: in component mem_mgr.hier, function mman_revoke_page defined in an inte
 |     [LD]   no_interface.edge_detect (edge_detect.o): Linking -lprintc -lcbuf_c -lmem_mgr_large -llock canny.o cos_libccv.a /home/cos//research//composite/src//components//lib/dietlibc-0.29/bin-i386/libm.a /home/cos//research//composite/src//components//lib/posix/posix.o
 |     [CP]   copying cos_libccv.a from libccv
 |     [LD]   no_interface.face_detect (face_detect.o): Linking -lprintc -lcbuf_c -lmem_mgr_large -llock fd.o cos_libccv.a /home/cos//research//composite/src//components//lib/dietlibc-0.29/bin-i386/libm.a /home/cos//research//composite/src//components//lib/posix/posix.o
-Error: component tests.sqlite3_newsqlite does not have stated dependencies to provide ['utimes']
-	Suggested Fix: add the proper interface dependency in the DEPENDENCIES list in components/implementation/tests/sqlite3_newsqlite/Makefile.
-Less likely fixes: a) you should specify a FN_PREPEND in the Makefile for a component that wishes to invoke another component with the same interface.
-b) you should reorder dependencies within the Makefile (see FAQ).
 |     [CP]   copying cos_libccv.a from libccv
 |     [LD]   tests.unit_posix (posix_t.o): Linking -lprintc -lcbuf_c -lmem_mgr_large -llock posix_test.o cos_libccv.a /home/cos//research//composite/src//components//lib/dietlibc-0.29/bin-i386/libm.a /home/cos//research//composite/src//components//lib/posix/posix.o
 |     [CP]   copying network stack from lwip

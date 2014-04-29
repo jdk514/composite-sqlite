@@ -5,6 +5,7 @@
 #include <evt.h>
 #include <torrent.h>
 #include <cos_synchronization.h>
+#include <cos_alloc.h>
 #include "sqlite3.h"
 
 static int callback(void *NotUsed, int argc, char **argv, char **azColName){
@@ -41,16 +42,16 @@ void cos_init(void) {
 			"SALARY         REAL );";
 	
 	/* Execute SQL statement */
-	rc = sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS test (id INTEGER NOT NULL PRIMARY KEY, text VARCHAR(100))", callback, 0, &zErrMsg);
+	rc = sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS test (id INTEGER NOT NULL PRIMARY KEY, text VARCHAR(100))", NULL, 0, &zErrMsg);
 	printc("it passed\n");
 	if (rc != SQLITE_OK) printc("SQL error\n");
 
-/*   if( rc != SQLITE_OK ){
+   if( rc != SQLITE_OK ){
 	printc("SQL error: %s\n", zErrMsg);
 		sqlite3_free(zErrMsg);
 	}else{
 		printc("Table created successfully\n");
-	}*/
+	}
 	sqlite3_close(db);
 	return;
 }
