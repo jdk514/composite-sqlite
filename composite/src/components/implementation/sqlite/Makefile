@@ -1,4 +1,4 @@
-C_OBJS=sqlite3.o sqlite_test.o
+C_OBJS=sqlite3.o sqlite_main.o
 ASM_OBJS=
 COMPONENT=sqlite_component.o
 INTERFACES=

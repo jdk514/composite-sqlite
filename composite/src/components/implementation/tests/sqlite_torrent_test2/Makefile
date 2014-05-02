@@ -1,10 +1,9 @@
-C_OBJS=sqlite3.o sqlite_test.o
+C_OBJS=torrent_test.o
 ASM_OBJS=
-COMPONENT=sqlite_base_test.o
+COMPONENT=sqlite_torrent_test2.o
 INTERFACES=
-DEPENDENCIES=printc torrent sched cbufp cbuf_c evt mem_mgr_large valloc lock
+DEPENDENCIES=sched printc timed_blk torrent cbufp cbuf_c evt mem_mgr_large valloc lock
 IF_LIB=
 
 include ../../Makefile.subsubdir
-
 
