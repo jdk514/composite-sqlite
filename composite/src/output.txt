@@ -43,6 +43,8 @@ Warning: in component mem_mgr.hier, function mman_revoke_page defined in an inte
 |     [LD]   no_interface.edge_detect (edge_detect.o): Linking -lprintc -lcbuf_c -lmem_mgr_large -llock canny.o cos_libccv.a /home/cos//research//composite/src//components//lib/dietlibc-0.29/bin-i386/libm.a /home/cos//research//composite/src//components//lib/posix/posix.o
 |     [CP]   copying cos_libccv.a from libccv
 |     [LD]   no_interface.face_detect (face_detect.o): Linking -lprintc -lcbuf_c -lmem_mgr_large -llock fd.o cos_libccv.a /home/cos//research//composite/src//components//lib/dietlibc-0.29/bin-i386/libm.a /home/cos//research//composite/src//components//lib/posix/posix.o
+|     [CC]   sqlite_test.c: Compiling
+|     [LD]   tests.sqlite3_newsqlite (sqlite4.o): Linking -lprintc -lcbuf_c -lmem_mgr_large -llock sqlite3.o sqlite_test.o
 |     [CP]   copying cos_libccv.a from libccv
 |     [LD]   tests.unit_posix (posix_t.o): Linking -lprintc -lcbuf_c -lmem_mgr_large -llock posix_test.o cos_libccv.a /home/cos//research//composite/src//components//lib/dietlibc-0.29/bin-i386/libm.a /home/cos//research//composite/src//components//lib/posix/posix.o
 |     [CP]   copying network stack from lwip
