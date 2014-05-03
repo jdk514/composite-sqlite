@@ -9,7 +9,9 @@
 ###Tests:
 
  * Look to (composite path)/componenets/implementation/sqlite for sqlite component
- * Look to (composite path)componenets/implementation/tests/(micro_ping or micro_sqlite) for test implementations
+     * It is the design for the sqlite component assuming the wait/trigger functionality was properly implemented
+ * Look to components/implementation/tests/sqlite_torrent_test(1-2) for sqlite torrent test implementation
+ * Look to componenets/implementation/tests/sqlite_base_test for the base sqlite test
   * **sqlite_base_test.sh** runs a component that runs through a set of basic queries
   * **sqlite_torrent_test.sh** runs two components that communicate through torrents
      * currently torrent interaction fails to wait for events, meaning query is sent and processed and results written, but the initial thread fails to read the results.
