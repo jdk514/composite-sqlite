@@ -1,8 +1,0 @@
-read(0, "create table test (id int, title"..., 1024) = 40
-open("/dev/urandom", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
-read(3, "\16\33>\7\246\227\350\257\221\233\314_\367\271#M\213\335\354\307\312\36\220\346v\207\32))\216\223\262"..., 256) = 256
-close(3)                                = 0
-write(1, "sqlite> ", 8)                 = 8
-read(0, "insert into test values (1, \"fir"..., 1024) = 38
-write(1, "sqlite> ", 8)                 = 8
-read(0,  <unfinished ...>

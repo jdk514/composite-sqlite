@@ -1,0 +1,143 @@
+
+***********************************************
+************* Building Components *************
+***********************************************
+
+make  --no-print-directory -I /home/cos/research/composite/src -C components
+components makeflag  --no-print-directory
+####### Stack Manager is Enabled #######
+make  --no-print-directory -I /home/cos/research/composite/src -I /home/cos/research/composite/src -I /home/cos/git/composite-sqlite/composite/src/components -C lib
+|     [CC]   Creating library file heap.a from heap.c
+|     [CC]   Creating library file cobj_format.a from cobj_format.c
+make  --no-print-directory -I /home/cos/research/composite/src -I /home/cos/research/composite/src -I /home/cos/git/composite-sqlite/composite/src/components -C interface
+***********************************************
+************[ Building interfaces ]************
+***********************************************
+rm cbuf_c.o
+rm cos_synchronization.o
+rm cos_alloc.o
+rm cos_alloc.o
+rm parlib.o
+rm printc.o
+rm printt.o
+make  --no-print-directory -I /home/cos/research/composite/src -I /home/cos/research/composite/src -I /home/cos/git/composite-sqlite/composite/src/components -C implementation
+***********************************************
+*********[ Building Implementations ]**********
+***********************************************
+|     [CP]  Copying lua library
+PRE
+|     [CP]  Copying lua library
+PRE
+Warning: in component lua_keyval.luatests, function luakv_getnumber defined in an interface, but not in component
+Warning: in component lua_keyval.luatests, function luakv_putstring_bytable defined in an interface, but not in component
+Warning: in component lua_keyval.luatests, function luakv_getstring defined in an interface, but not in component
+Warning: in component lua_keyval.luatests, function luakv_getnumber_bytable defined in an interface, but not in component
+Warning: in component lua_keyval.luatests, function luakv_putstring defined in an interface, but not in component
+Warning: in component lua_keyval.luatests, function luakv_putnumber_bytable defined in an interface, but not in component
+Warning: in component lua_keyval.luatests, function luakv_getstring_bytable defined in an interface, but not in component
+Warning: in component lua_keyval.luatests, function luakv_putnumber defined in an interface, but not in component
+Warning: in component mem_mgr.hier, function mman_revoke_page defined in an interface, but not in component
+|     [CP]   copying network stack from lwip
+|     [LD]   net_transport.tcp (net.o): Linking -lmem_mgr_large -lprintc -llock cos_net.o ../net_stack.o
+|     [CP]   copying cos_libccv.a from libccv
+|     [LD]   no_interface.edge_detect (edge_detect.o): Linking -lprintc -lcbuf_c -lmem_mgr_large -llock canny.o cos_libccv.a /home/cos//research//composite/src//components//lib/dietlibc-0.29/bin-i386/libm.a /home/cos//research//composite/src//components//lib/posix/posix.o
+|     [CP]   copying cos_libccv.a from libccv
+|     [LD]   no_interface.face_detect (face_detect.o): Linking -lprintc -lcbuf_c -lmem_mgr_large -llock fd.o cos_libccv.a /home/cos//research//composite/src//components//lib/dietlibc-0.29/bin-i386/libm.a /home/cos//research//composite/src//components//lib/posix/posix.o
+Makefile:8: ../../Makefile.subsubdir: No such file or directory
+make[3]: *** No rule to make target `../../Makefile.subsubdir'.  Stop.
+|     [CC]   sqlite_test.c: Compiling
+sqlite_test.c: In function ‘write_response’:
+sqlite_test.c:55: warning: passing argument 1 of ‘strlen’ from incompatible pointer type
+/home/cos//research//composite/src//components//lib/dietlibc-0.29/include/string.h:26: note: expected ‘const char *’ but argument is of type ‘char **’
+sqlite_test.c:55: warning: passing argument 3 of ‘twrite_pack’ from incompatible pointer type
+/home/cos//research//composite/src//components//interface//torrent/torrent.h:59: note: expected ‘char *’ but argument is of type ‘char **’
+sqlite_test.c:57: warning: passing argument 1 of ‘strlen’ from incompatible pointer type
+/home/cos//research//composite/src//components//lib/dietlibc-0.29/include/string.h:26: note: expected ‘const char *’ but argument is of type ‘char **’
+sqlite_test.c:57: warning: format ‘%s’ expects type ‘char *’, but argument 3 has type ‘char **’
+sqlite_test.c: In function ‘callback’:
+sqlite_test.c:66: warning: left-hand operand of comma expression has no effect
+sqlite_test.c:66: warning: left-hand operand of comma expression has no effect
+sqlite_test.c:66: warning: passing argument 1 of ‘strcat’ from incompatible pointer type
+/home/cos//research//composite/src//components//lib/dietlibc-0.29/include/string.h:35: note: expected ‘char *’ but argument is of type ‘char **’
+|     [LD]   tests.sqlite_torrent_test1 (sqlite_torrent_test1.o): Linking -lprintc -lcbuf_c -lmem_mgr_large -llock sqlite3.o sqlite_test.o
+|     [CC]   torrent_test.c: Compiling
+torrent_test.c: In function ‘db_query’:
+torrent_test.c:47: warning: type of ‘sql_statement’ defaults to ‘int’
+torrent_test.c:59: warning: passing argument 1 of ‘strlen’ makes pointer from integer without a cast
+/home/cos//research//composite/src//components//lib/dietlibc-0.29/include/string.h:26: note: expected ‘const char *’ but argument is of type ‘int’
+torrent_test.c:59: warning: passing argument 3 of ‘twrite_pack’ makes pointer from integer without a cast
+/home/cos//research//composite/src//components//interface//torrent/torrent.h:59: note: expected ‘char *’ but argument is of type ‘int’
+torrent_test.c:61: warning: passing argument 1 of ‘strlen’ makes pointer from integer without a cast
+/home/cos//research//composite/src//components//lib/dietlibc-0.29/include/string.h:26: note: expected ‘const char *’ but argument is of type ‘int’
+torrent_test.c:61: warning: format ‘%s’ expects type ‘char *’, but argument 3 has type ‘int’
+torrent_test.c: In function ‘torrent_test’:
+torrent_test.c:71: warning: ‘rc’ is used uninitialized in this function
+|     [LD]   tests.sqlite_torrent_test2 (sqlite_torrent_test2.o): Linking -lprintc -lcbuf_c -lmem_mgr_large -llock torrent_test.o
+|     [CP]   copying cos_libccv.a from libccv
+|     [LD]   tests.unit_posix (posix_t.o): Linking -lprintc -lcbuf_c -lmem_mgr_large -llock posix_test.o cos_libccv.a /home/cos//research//composite/src//components//lib/dietlibc-0.29/bin-i386/libm.a /home/cos//research//composite/src//components//lib/posix/posix.o
+|     [CP]   copying network stack from lwip
+|     [LD]   torrent.tcp (tnet.o): Linking -lmem_mgr_large -lprintc -llock -lcbuf_c cos_net.o net_stack.o ../complib.o
+
+***********************************************
+******** Building Platform and Kernel *********
+***********************************************
+
+make  --no-print-directory -I /home/cos/research/composite/src -C platform
+make -C linux
+make -C module
+make -C /home/cos//research//linux-2.6.36/ SUBDIRS=/home/cos/git/composite-sqlite/composite/src/platform/linux/module modules
+  Building modules, stage 2.
+  MODPOST 1 modules
+make -C net
+make -C /home/cos//research//linux-2.6.36/ SUBDIRS=/home/cos/git/composite-sqlite/composite/src/platform/linux/net modules
+  Building modules, stage 2.
+  MODPOST 1 modules
+WARNING: "host_start_syscall" [/home/cos/git/composite-sqlite/composite/src/platform/linux/net/cnet.ko] undefined!
+WARNING: "cos_net_try_acap" [/home/cos/git/composite-sqlite/composite/src/platform/linux/net/cnet.ko] undefined!
+WARNING: "host_end_syscall" [/home/cos/git/composite-sqlite/composite/src/platform/linux/net/cnet.ko] undefined!
+WARNING: "cos_net_meas_packet" [/home/cos/git/composite-sqlite/composite/src/platform/linux/net/cnet.ko] undefined!
+WARNING: "cos_net_register" [/home/cos/git/composite-sqlite/composite/src/platform/linux/net/cnet.ko] undefined!
+WARNING: "cos_net_deregister" [/home/cos/git/composite-sqlite/composite/src/platform/linux/net/cnet.ko] undefined!
+make -C util
+make[4]: Nothing to be done for `all'.
+make -C translator
+make -C /home/cos//research//linux-2.6.36/ SUBDIRS=/home/cos/git/composite-sqlite/composite/src/platform/linux/translator modules
+  Building modules, stage 2.
+  MODPOST 1 modules
+WARNING: "cos_trans_dereg" [/home/cos/git/composite-sqlite/composite/src/platform/linux/translator/trans.ko] undefined!
+WARNING: "cos_trans_reg" [/home/cos/git/composite-sqlite/composite/src/platform/linux/translator/trans.ko] undefined!
+WARNING: "cos_trans_upcall" [/home/cos/git/composite-sqlite/composite/src/platform/linux/translator/trans.ko] undefined!
+make -C helpers 
+make[5]: `ctol_meas' is up to date.
+make[5]: `ltoc_meas' is up to date.
+make[5]: `print' is up to date.
+make[5]: `term' is up to date.
+make -C link_load
+make[3]: Nothing to be done for `default'.
+make  --no-print-directory -I /home/cos/research/composite/src -C platform cp
+make -C linux cp
+make -C module cp
+cp cos.ko /home/cos//transfer/
+make -C net cp
+cp cnet.ko /home/cos//transfer/
+make -C util cp
+cp cnet_user udp_client udp_server tcp_server tcp_client /home/cos//transfer/
+make -C translator cp
+cp trans.ko /home/cos//transfer/
+make -C helpers cp
+cp ctol_meas /home/cos//transfer/
+cp ltoc_meas /home/cos//transfer/
+cp print /home/cos//transfer/
+cp term /home/cos//transfer/
+make -C link_load cp
+cp cos_loader gen_client_stub /home/cos//transfer/
+cat /home/cos//research//composite/src//Makefile.src ./util/Makefile.end > /home/cos//transfer//Makefile
+cp /home/cos//research//composite/src//Makefile.cosconfig /home/cos//transfer//
+cp ./util/*.sh ./util/*.py ./util/*.tar /home/cos//transfer/
+make  --no-print-directory -I /home/cos/research/composite/src -C components cp
+components makeflag  --no-print-directory
+####### Stack Manager is Enabled #######
+make  --no-print-directory -I /home/cos/research/composite/src -I /home/cos/research/composite/src -I /home/cos/git/composite-sqlite/composite/src/components -C implementation cp
+|     [CP]   Copying all components to /home/cos//transfer/
+Makefile:8: ../../Makefile.subsubdir: No such file or directory
+make[3]: *** No rule to make target `../../Makefile.subsubdir'.  Stop.

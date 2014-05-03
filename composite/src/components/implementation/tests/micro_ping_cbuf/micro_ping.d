@@ -50,4 +50,7 @@ micro_ping.o micro_ping.d : micro_ping.c \
  /home/cos//research//composite/src//components//include/cos_synchronization.h \
  /home/cos//research//composite/src//components//include/cos_time.h \
  /home/cos//research//composite/src//components//interface//cbuf_c/tmem_conf.h \
- /home/cos//research//composite/src//components//interface//cbuf_c/cbuf_meta.h
+ /home/cos//research//composite/src//components//interface//cbuf_c/cbuf_meta.h \
+ /home/cos//research//composite/src//components//interface//valloc/valloc.h \
+ sqlite3.h \
+ /home/cos//research//composite/src//components//lib/dietlibc-0.29/include/stdarg.h
