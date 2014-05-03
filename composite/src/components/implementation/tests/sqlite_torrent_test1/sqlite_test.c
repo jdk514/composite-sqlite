@@ -71,6 +71,18 @@ void run_sqlite() {
 	sqlite3 *db;
 	char *zErrMsg = 0;
 	int rc;
+	td_t t1, t2;
+	long evt1, evt2;
+	unsigned int ret1, ret2;
+
+	int a = 0, b = 0, c = 0;
+	c = treadp(cos_spd_id(), 0, &a, &b);
+
+	printc("%d %d %d\n", a, b, c);
+
+	evt1 = evt_split(cos_spd_id(), 0, 0);
+	evt2 = evt_split(cos_spd_id(), 0, 0);
+	assert(evt1 > 0 && evt2 > 0);
 
 	/* Open database */
 	rc = sqlite3_open(":memory:", &db);

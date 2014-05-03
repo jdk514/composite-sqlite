@@ -63,8 +63,9 @@ int db_query(sql_statement) {
 
 static void torrent_test() {
 	int rc;
-
-	db_query("SELECT * FROM PEOPLE");
+	char *sql_query = "DELETE from PEOPLE where ID=2; " \
+						"SELECT * from PEOPLE";
+	db_query(sql_query);
 	if (rc > 0) {
 		printc("SQLITE: Error Writing Query\n");
 		return;

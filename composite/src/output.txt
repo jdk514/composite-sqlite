@@ -45,18 +45,33 @@ Warning: in component mem_mgr.hier, function mman_revoke_page defined in an inte
 |     [LD]   no_interface.face_detect (face_detect.o): Linking -lprintc -lcbuf_c -lmem_mgr_large -llock fd.o cos_libccv.a /home/cos//research//composite/src//components//lib/dietlibc-0.29/bin-i386/libm.a /home/cos//research//composite/src//components//lib/posix/posix.o
 Makefile:8: ../../Makefile.subsubdir: No such file or directory
 make[3]: *** No rule to make target `../../Makefile.subsubdir'.  Stop.
+|     [CC]   sqlite_test.c: Compiling
+sqlite_test.c: In function ‘write_response’:
+sqlite_test.c:55: warning: passing argument 1 of ‘strlen’ from incompatible pointer type
+/home/cos//research//composite/src//components//lib/dietlibc-0.29/include/string.h:26: note: expected ‘const char *’ but argument is of type ‘char **’
+sqlite_test.c:55: warning: passing argument 3 of ‘twrite_pack’ from incompatible pointer type
+/home/cos//research//composite/src//components//interface//torrent/torrent.h:59: note: expected ‘char *’ but argument is of type ‘char **’
+sqlite_test.c:57: warning: passing argument 1 of ‘strlen’ from incompatible pointer type
+/home/cos//research//composite/src//components//lib/dietlibc-0.29/include/string.h:26: note: expected ‘const char *’ but argument is of type ‘char **’
+sqlite_test.c:57: warning: format ‘%s’ expects type ‘char *’, but argument 3 has type ‘char **’
+sqlite_test.c: In function ‘callback’:
+sqlite_test.c:66: warning: left-hand operand of comma expression has no effect
+sqlite_test.c:66: warning: left-hand operand of comma expression has no effect
+sqlite_test.c:66: warning: passing argument 1 of ‘strcat’ from incompatible pointer type
+/home/cos//research//composite/src//components//lib/dietlibc-0.29/include/string.h:35: note: expected ‘char *’ but argument is of type ‘char **’
+|     [LD]   tests.sqlite_torrent_test1 (sqlite_torrent_test1.o): Linking -lprintc -lcbuf_c -lmem_mgr_large -llock sqlite3.o sqlite_test.o
 |     [CC]   torrent_test.c: Compiling
 torrent_test.c: In function ‘db_query’:
-torrent_test.c:46: warning: type of ‘sql_statement’ defaults to ‘int’
-torrent_test.c:58: warning: passing argument 1 of ‘strlen’ makes pointer from integer without a cast
-/home/cos//research//composite/src//components//lib/dietlibc-0.29/include/string.h:26: note: expected ‘const char *’ but argument is of type ‘int’
-torrent_test.c:58: warning: passing argument 3 of ‘twrite_pack’ makes pointer from integer without a cast
-/home/cos//research//composite/src//components//interface//torrent/torrent.h:59: note: expected ‘char *’ but argument is of type ‘int’
+torrent_test.c:47: warning: type of ‘sql_statement’ defaults to ‘int’
 torrent_test.c:59: warning: passing argument 1 of ‘strlen’ makes pointer from integer without a cast
 /home/cos//research//composite/src//components//lib/dietlibc-0.29/include/string.h:26: note: expected ‘const char *’ but argument is of type ‘int’
-torrent_test.c:59: warning: format ‘%s’ expects type ‘char *’, but argument 3 has type ‘int’
+torrent_test.c:59: warning: passing argument 3 of ‘twrite_pack’ makes pointer from integer without a cast
+/home/cos//research//composite/src//components//interface//torrent/torrent.h:59: note: expected ‘char *’ but argument is of type ‘int’
+torrent_test.c:61: warning: passing argument 1 of ‘strlen’ makes pointer from integer without a cast
+/home/cos//research//composite/src//components//lib/dietlibc-0.29/include/string.h:26: note: expected ‘const char *’ but argument is of type ‘int’
+torrent_test.c:61: warning: format ‘%s’ expects type ‘char *’, but argument 3 has type ‘int’
 torrent_test.c: In function ‘torrent_test’:
-torrent_test.c:68: warning: ‘rc’ is used uninitialized in this function
+torrent_test.c:71: warning: ‘rc’ is used uninitialized in this function
 |     [LD]   tests.sqlite_torrent_test2 (sqlite_torrent_test2.o): Linking -lprintc -lcbuf_c -lmem_mgr_large -llock torrent_test.o
 |     [CP]   copying cos_libccv.a from libccv
 |     [LD]   tests.unit_posix (posix_t.o): Linking -lprintc -lcbuf_c -lmem_mgr_large -llock posix_test.o cos_libccv.a /home/cos//research//composite/src//components//lib/dietlibc-0.29/bin-i386/libm.a /home/cos//research//composite/src//components//lib/posix/posix.o
